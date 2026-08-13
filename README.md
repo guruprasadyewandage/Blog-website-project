@@ -438,7 +438,5 @@ Social sharing
 Better role-based authorization
 
 Author
-
 Guruprasad Yewandage
-
 Built as a full-stack web development project to practice React, Appwrite, authentication, CRUD operations, state management, and responsive UI development.
