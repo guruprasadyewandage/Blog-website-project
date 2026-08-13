@@ -1,143 +1,110 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../Logo'
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../Logo";
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-gray-400 border border-t-2 border-t-black">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-                        <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 inline-flex items-center">
-                                <Logo width="100px" />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-600">
-                                    &copy; Copyright 2025. All Rights Reserved by Guru.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Company
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Affiliate Program
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Press Kit
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Support
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Account
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Help
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Contact Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Customer Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                                Legals
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Terms &amp; Conditions
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Licensing
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <footer className="border-t border-slate-800 bg-slate-950 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div className="lg:col-span-2">
+            <Link to="/" className="inline-block">
+              <Logo width="170px" />
+            </Link>
+
+            <p className="mt-5 max-w-md text-sm leading-7 text-slate-400">
+              A modern space for writers and readers to share ideas,
+              experiences, stories, and knowledge.
+            </p>
+
+            <div className="mt-6 flex items-center gap-3">
+              <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-400">
+                Write
+              </span>
+
+              <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-400">
+                Share
+              </span>
+
+              <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-400">
+                Inspire
+              </span>
             </div>
-        </section>
-  )
+          </div>
+
+          {/* Explore */}
+          <div>
+            <h3 className="mb-5 text-sm font-bold uppercase tracking-wider text-white">
+              Explore
+            </h3>
+
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Home
+              </Link>
+
+              <Link
+                to="/all-posts"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                All Articles
+              </Link>
+
+              <Link
+                to="/signup"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Create Account
+              </Link>
+            </div>
+          </div>
+
+          {/* Account */}
+          <div>
+            <h3 className="mb-5 text-sm font-bold uppercase tracking-wider text-white">
+              Account
+            </h3>
+
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/login"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Sign In
+              </Link>
+
+              <Link
+                to="/signup"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Sign Up
+              </Link>
+
+              <Link
+                to="/add-post"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Write an Article
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col gap-3 border-t border-slate-800 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Blog-Website. All rights reserved.</p>
+
+          <p>
+            Built with <span className="text-indigo-400">React</span> &{" "}
+            <span className="text-indigo-400">Appwrite</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
