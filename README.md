@@ -70,57 +70,61 @@ Appwrite Storage
 
 Project Structure
 
+## Project Structure
+
+```text
 Blog-Website/
 ├── public/
+│
 ├── src/
-│ ├── appwrite/
-│ │ ├── auth.js
-│ │ └── config.js
-│ │
-│ ├── assets/
-│ │
-│ ├── components/
-│ │ ├── container/
-│ │ ├── post-form/
-│ │ ├── Footer/
-│ │ ├── Header/
-│ │ ├── AuthLayout.jsx
-│ │ ├── Button.jsx
-│ │ ├── Input.jsx
-│ │ ├── Login.jsx
-│ │ ├── Logo.jsx
-│ │ ├── PostCard.jsx
-│ │ ├── RTE.jsx
-│ │ ├── Select.jsx
-│ │ └── Signup.jsx
-│ │
-│ ├── conf/
-│ │ └── conf.js
-│ │
-│ ├── pages/
-│ │ ├── AddPost.jsx
-│ │ ├── AllPosts.jsx
-│ │ ├── EditPost.jsx
-│ │ ├── Home.jsx
-│ │ ├── Login.jsx
-│ │ ├── Post.jsx
-│ │ └── Signup.jsx
-│ │
-│ ├── store/
-│ │ ├── authSlice.js
-│ │ ├── postSlice.js
-│ │ └── store.js
-│ │
-│ ├── App.jsx
-│ ├── App.css
-│ ├── index.css
-│ └── main.jsx
+│   ├── appwrite/
+│   │   ├── auth.js
+│   │   └── config.js
+│   │
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── container/
+│   │   ├── post-form/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── AuthLayout.jsx
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── Login.jsx
+│   │   ├── Logo.jsx
+│   │   ├── PostCard.jsx
+│   │   ├── RTE.jsx
+│   │   ├── Select.jsx
+│   │   └── Signup.jsx
+│   │
+│   ├── conf/
+│   │   └── conf.js
+│   │
+│   ├── pages/
+│   │   ├── AddPost.jsx
+│   │   ├── AllPosts.jsx
+│   │   ├── EditPost.jsx
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Post.jsx
+│   │   └── Signup.jsx
+│   │
+│   ├── store/
+│   │   ├── authSlice.js
+│   │   ├── postSlice.js
+│   │   └── store.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
 │
 ├── .env
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 Application Flow
 
 1. Authentication
